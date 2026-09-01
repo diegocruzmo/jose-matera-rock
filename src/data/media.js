@@ -125,7 +125,7 @@ export const mediaItems = [
     title: 'José Matera Acústico',
     series: 'Cover acústico',
     description: 'Sesión acústica de José Matera.',
-    localVideo: '/videos/jose.mp4'
+    localVideo: '/videos/jose_cover.mp4'
   },
   {
     id: 14,
