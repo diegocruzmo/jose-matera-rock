@@ -25,7 +25,7 @@ export function Hero() {
           <span>Sígueme en</span>
           <div>
             <a
-              href='https://open.spotify.com/artist/1Spv1yWtjWlurw08YofT3R?si=3xhGMyTbRRudZNlvzkQ31g'
+              href='https://open.spotify.com/artist/1Spv1yWtjWlurw08YofT3R'
               aria-label='Spotify'
             >
               <Music2 />

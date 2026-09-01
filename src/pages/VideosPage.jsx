@@ -14,7 +14,6 @@ import { Footer } from '../components/Footer'
 import { mediaItems } from '../data/media'
 
 const filters = [
-  { value: 'all', label: 'Todo' },
   { value: 'music', label: 'Videos musicales' },
   { value: 'podcast', label: 'Podcast' },
   { value: 'cover', label: 'Covers' },
@@ -35,10 +34,9 @@ const typeIcons = {
 }
 
 export function VideosPage() {
-  const [activeFilter, setActiveFilter] = useState('all')
-  const visibleItems = mediaItems.filter(
-    (item) => activeFilter === 'all' || item.type === activeFilter,
-  )
+  const [activeFilter, setActiveFilter] = useState('music')
+  const activeSection = filters.find((filter) => filter.value === activeFilter)
+  const visibleItems = mediaItems.filter((item) => item.type === activeFilter)
 
   return (
     <>
@@ -60,7 +58,7 @@ export function VideosPage() {
           <div className='media-toolbar'>
             <div>
               <span className='eyebrow'>EXPLORA</span>
-              <h2 id='media-title'>TODOS LOS EPISODIOS</h2>
+              <h2 id='media-title'>{activeSection.label}</h2>
             </div>
             <div className='media-filters' aria-label='Filtrar contenido'>
               {filters.map((filter) => (
@@ -84,13 +82,22 @@ export function VideosPage() {
               return (
                 <article className='media-card' key={item.id}>
                 <div className='video-frame'>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${item.youtubeId}`}
-                    title={item.title}
-                    loading='lazy'
-                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                    allowFullScreen
-                  />
+                  {item.localVideo ? (
+                    <video
+                      src={item.localVideo}
+                      aria-label={item.title}
+                      controls
+                      preload='metadata'
+                    />
+                  ) : (
+                    <iframe
+                      src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                      title={item.title}
+                      loading='lazy'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowFullScreen
+                    />
+                  )}
                 </div>
                 <div className='media-card__body'>
                   <span className='media-card__type'>
@@ -99,13 +106,19 @@ export function VideosPage() {
                   </span>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
-                  <a
-                    href={`https://www.youtube.com/watch?v=${item.youtubeId}`}
-                    target='_blank'
-                    rel='noreferrer'
-                  >
-                    <Play size={15} /> Ver en YouTube <ExternalLink size={14} />
-                  </a>
+                  {item.localVideo ? (
+                    <a href={item.localVideo}>
+                      <Play size={15} /> Ver video
+                    </a>
+                  ) : (
+                    <a
+                      href={`https://www.youtube.com/watch?v=${item.youtubeId}`}
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      <Play size={15} /> Ver en YouTube <ExternalLink size={14} />
+                    </a>
+                  )}
                 </div>
                 </article>
               )

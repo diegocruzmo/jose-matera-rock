@@ -36,8 +36,24 @@ export const mediaItems = [
     type: 'music',
     title: 'Amor',
     series: 'Video musical',
-    description: 'Joe Carvajal y Los de Adentro.',
+    description: 'José Matera',
     youtubeId: '4cS1BXqDCGU'
+  },
+  {
+    id: 27,
+    type: 'music',
+    title: 'Si te vas te vas',
+    series: 'Fan video',
+    description: 'José Matera',
+    youtubeId: 'EoXixvciGGg'
+  },
+  {
+    id: 28,
+    type: 'music',
+    title: 'Todo se me escapa',
+    series: 'Fan video',
+    description: 'José Matera',
+    youtubeId: 'tU5Gi79meUE'
   },
   {
     id: 6,
@@ -102,6 +118,14 @@ export const mediaItems = [
     series: 'Cover acústico',
     description: 'Versión de José Matera en formato acústico.',
     youtubeId: 'ykiEH6VJq3g'
+  },
+  {
+    id: 27,
+    type: 'cover',
+    title: 'José Matera Acústico',
+    series: 'Cover acústico',
+    description: 'Sesión acústica de José Matera.',
+    localVideo: '/videos/jose.mp4'
   },
   {
     id: 14,
