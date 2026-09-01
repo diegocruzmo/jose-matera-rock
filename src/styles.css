@@ -22,11 +22,10 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(rgb(6 7 9 / 0.45), rgb(6 7 9 / 0.6)),
-    url('../public/images/hero/fondo.png') center center / cover fixed no-repeat;
+  background: url("/images/hero/fondo.png") center center / cover fixed
+    no-repeat;
   color: var(--white);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 a {
@@ -57,7 +56,7 @@ img {
 }
 
 .site-header::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0 0 auto;
   height: 86px;
@@ -68,7 +67,7 @@ img {
 
 .brand {
   font:
-    900 30px/1 'Anton',
+    900 30px/1 "Anton",
     sans-serif;
   letter-spacing: 1px;
 }
@@ -92,7 +91,7 @@ img {
 }
 
 .nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 100%;
@@ -138,7 +137,7 @@ img {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -176,7 +175,7 @@ img {
 .hero h1 {
   margin: 22px 0 18px;
   font:
-    400 clamp(84px, 12vw, 190px)/0.73 'Anton',
+    400 clamp(84px, 12vw, 190px)/0.73 "Anton",
     sans-serif;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -257,7 +256,7 @@ img {
 }
 
 .hero-photo-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background:
@@ -300,7 +299,7 @@ img {
   writing-mode: vertical-rl;
   color: rgb(255 255 255 / 0.18);
   font:
-    400 72px/1 'Anton',
+    400 72px/1 "Anton",
     sans-serif;
   letter-spacing: 0.05em;
 }
@@ -336,7 +335,7 @@ img {
   width: max-content;
   padding: 13px 0;
   font:
-    400 20px/1 'Anton',
+    400 20px/1 "Anton",
     sans-serif;
   letter-spacing: 0.08em;
   animation: marquee 20s linear infinite;
@@ -362,7 +361,7 @@ img {
 .section-heading h2 {
   margin: 12px 0 16px;
   font:
-    400 clamp(48px, 7vw, 92px)/0.9 'Anton',
+    400 clamp(48px, 7vw, 92px)/0.9 "Anton",
     sans-serif;
   letter-spacing: -0.02em;
 }
@@ -421,7 +420,7 @@ img {
 
 .event-date strong {
   font:
-    400 22px/1 'Anton',
+    400 22px/1 "Anton",
     sans-serif;
 }
 
@@ -518,7 +517,7 @@ img {
 .release-meta h3 {
   margin: 6px 0 12px;
   font:
-    400 clamp(24px, 3vw, 42px)/1 'Anton',
+    400 clamp(24px, 3vw, 42px)/1 "Anton",
     sans-serif;
 }
 
@@ -556,7 +555,7 @@ img {
       rgb(5 6 8 / 0.65) 50%,
       rgb(5 6 8 / 0.25) 100%
     ),
-    url('../public/images/hero/fondo.png') 68% center / cover no-repeat;
+    url("../public/images/hero/fondo.png") 68% center / cover no-repeat;
 }
 
 .media-hero__copy {
@@ -567,7 +566,7 @@ img {
 .media-hero h1 {
   margin: 18px 0 24px;
   font:
-    400 clamp(72px, 10vw, 148px)/0.78 'Anton',
+    400 clamp(72px, 10vw, 148px)/0.78 "Anton",
     sans-serif;
   letter-spacing: -0.035em;
 }
@@ -591,7 +590,7 @@ img {
   bottom: -32px;
   color: rgb(255 255 255 / 0.025);
   font:
-    400 clamp(150px, 28vw, 420px)/0.75 'Anton',
+    400 clamp(150px, 28vw, 420px)/0.75 "Anton",
     sans-serif;
 }
 
@@ -612,7 +611,7 @@ img {
 .media-toolbar h2 {
   margin: 10px 0 0;
   font:
-    400 clamp(38px, 5vw, 68px)/0.95 'Anton',
+    400 clamp(38px, 5vw, 68px)/0.95 "Anton",
     sans-serif;
 }
 
@@ -674,7 +673,7 @@ img {
 .media-card h3 {
   margin: 9px 0 8px;
   font:
-    400 clamp(28px, 3vw, 42px)/1 'Anton',
+    400 clamp(28px, 3vw, 42px)/1 "Anton",
     sans-serif;
 }
 
@@ -718,7 +717,7 @@ img {
 .lyric-row h3 {
   margin: 0;
   font:
-    400 32px/1 'Anton',
+    400 32px/1 "Anton",
     sans-serif;
 }
 
@@ -760,7 +759,7 @@ img {
 }
 
 .about-visual::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgb(6 7 9 / 0.82), transparent 60%);
@@ -847,7 +846,7 @@ img {
 .footer strong {
   color: var(--white);
   font:
-    400 26px/1 'Anton',
+    400 26px/1 "Anton",
     sans-serif;
 }
 
@@ -1048,7 +1047,7 @@ img {
   position: absolute;
   z-index: -3;
   inset: 0;
-  background: url('/images/hero/jose-matera-rock-art.png') 68% center/cover
+  background: url("/images/hero/jose-matera-rock-art.png") 68% center/cover
     no-repeat;
   transform: scale(1.015);
   filter: saturate(0.92) contrast(1.08) brightness(0.78);
@@ -1075,7 +1074,7 @@ img {
 .hero--art h1 {
   margin: 20px 0 12px;
   font:
-    400 clamp(90px, 10vw, 168px)/0.72 'Anton',
+    400 clamp(90px, 10vw, 168px)/0.72 "Anton",
     sans-serif;
   letter-spacing: -0.035em;
 }
@@ -1090,7 +1089,7 @@ img {
   margin: 28px 0 0;
   color: var(--white);
   font:
-    400 clamp(21px, 2.3vw, 34px)/1.15 'Anton',
+    400 clamp(21px, 2.3vw, 34px)/1.15 "Anton",
     sans-serif;
   text-transform: uppercase;
 }
