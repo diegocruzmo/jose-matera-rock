@@ -27,7 +27,7 @@ export function Releases() {
       </div>
 
       <div className='release-layout'>
-        {releases.map((release, index) => (
+        {releases.slice(0, 2).map((release, index) => (
           <article
             className={index === 0 ? 'release release--main' : 'release'}
             key={release.id}
@@ -54,6 +54,11 @@ export function Releases() {
             </div>
           </article>
         ))}
+      </div>
+      <div className='release-archive-link'>
+        <a className='btn btn-ghost' href='/videos'>
+          Ver todos los videos y podcast <ExternalLink size={16} />
+        </a>
       </div>
     </section>
   )

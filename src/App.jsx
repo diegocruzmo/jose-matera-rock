@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Hero } from './sections/Hero'
@@ -5,11 +6,25 @@ import { Events } from './sections/Events'
 import { Releases } from './sections/Releases'
 import { About } from './sections/About'
 import { Contact } from './sections/Contact'
+import { VideosPage } from './pages/VideosPage'
 
 export default function App() {
+  const pathname = window.location.pathname.replace(/\/$/, '') || '/'
+
+  useLayoutEffect(() => {
+    if (pathname !== '/' || !window.location.hash) return
+
+    const section = document.querySelector(window.location.hash)
+    section?.scrollIntoView()
+  }, [pathname])
+
+  if (pathname === '/videos') {
+    return <VideosPage />
+  }
+
   return (
     <>
-      <Header />
+      <Header pathname='/' />
       <main>
         <Hero />
         <div className='marquee' aria-hidden='true'>

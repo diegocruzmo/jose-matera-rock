@@ -106,6 +106,10 @@ img {
   right: 0;
 }
 
+.nav a.nav-active::after {
+  right: 0;
+}
+
 .menu-button {
   display: none;
   color: var(--white);
@@ -520,6 +524,171 @@ img {
   font-size: 13px;
 }
 
+.release-archive-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+}
+
+.media-page {
+  min-height: 100vh;
+  background: #07080a;
+}
+
+.media-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 150px max(32px, calc((100vw - var(--max)) / 2)) 74px;
+  border-bottom: 1px solid var(--border);
+  background:
+    linear-gradient(
+      90deg,
+      rgb(5 6 8 / 0.94) 0%,
+      rgb(5 6 8 / 0.65) 50%,
+      rgb(5 6 8 / 0.25) 100%
+    ),
+    url('../public/images/hero/fondo.png') 68% center / cover no-repeat;
+}
+
+.media-hero__copy {
+  position: relative;
+  z-index: 2;
+}
+
+.media-hero h1 {
+  margin: 18px 0 24px;
+  font:
+    400 clamp(72px, 10vw, 148px)/0.78 'Anton',
+    sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.media-hero h1 span {
+  color: var(--blue);
+  -webkit-text-stroke: 0;
+}
+
+.media-hero p {
+  max-width: 590px;
+  margin: 0;
+  color: #b8bac0;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.65;
+}
+
+.media-hero__mark {
+  position: absolute;
+  right: -28px;
+  bottom: -32px;
+  color: rgb(255 255 255 / 0.025);
+  font:
+    400 clamp(150px, 28vw, 420px)/0.75 'Anton',
+    sans-serif;
+}
+
+.media-library {
+  max-width: var(--max);
+  margin: auto;
+  padding: 86px 32px 120px;
+}
+
+.media-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 42px;
+}
+
+.media-toolbar h2 {
+  margin: 10px 0 0;
+  font:
+    400 clamp(38px, 5vw, 68px)/0.95 'Anton',
+    sans-serif;
+}
+
+.media-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.media-filters button {
+  min-height: 42px;
+  padding: 0 16px;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.media-filters button:hover,
+.media-filters button:focus-visible,
+.media-filters button.is-active {
+  color: white;
+  border-color: var(--blue);
+  background: var(--blue);
+  outline: none;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 26px;
+}
+
+.media-card {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.media-card__body {
+  padding-top: 18px;
+}
+
+.media-card__type {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue-light);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.media-card h3 {
+  margin: 9px 0 8px;
+  font:
+    400 clamp(28px, 3vw, 42px)/1 'Anton',
+    sans-serif;
+}
+
+.media-card p {
+  max-width: 540px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.media-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .lyrics-list {
   border-top: 1px solid var(--border);
 }
@@ -759,8 +928,23 @@ img {
 
   .events-grid,
   .release-layout,
-  .about-card {
+  .about-card,
+  .media-grid {
     grid-template-columns: 1fr;
+  }
+
+  .media-hero {
+    min-height: 500px;
+    padding: 130px 20px 60px;
+  }
+
+  .media-library {
+    padding: 72px 20px 90px;
+  }
+
+  .media-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .event-card {

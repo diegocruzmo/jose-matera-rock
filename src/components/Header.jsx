@@ -2,18 +2,19 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  ["Fechas", "#fechas"],
-  ["Música", "#musica"],
-  ["Bio", "#bio"],
-  ["Contacto", "#contacto"],
+  ["Fechas", "/#fechas"],
+  ["Música", "/#musica"],
+  ["Videos & Podcast", "/videos"],
+  ["Bio", "/#bio"],
+  ["Contacto", "/#contacto"],
 ];
 
-export function Header() {
+export function Header({ pathname = '/' }) {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="site-header">
-      <a className="brand" href="#inicio" aria-label="José Matera, inicio">
+      <a className="brand" href="/#inicio" aria-label="José Matera, inicio">
         JM<span>.</span>
       </a>
 
@@ -28,7 +29,12 @@ export function Header() {
 
       <nav className={open ? "nav nav--open" : "nav"} aria-label="Principal">
         {links.map(([label, href]) => (
-          <a key={href} href={href} onClick={() => setOpen(false)}>
+          <a
+            className={pathname === href ? 'nav-active' : ''}
+            key={href}
+            href={href}
+            onClick={() => setOpen(false)}
+          >
             {label}
           </a>
         ))}
