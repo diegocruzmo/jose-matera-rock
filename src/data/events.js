@@ -30,7 +30,7 @@ export const events = [
     id: 4,
     date: '26-27 SEP',
     year: '2026',
-    city: 'Barranquilla',
+    city: 'Panamá',
     venue: 'Sesión acústica',
     flyer: '/images/events/flyer-04.png',
     ticketUrl: '#'
