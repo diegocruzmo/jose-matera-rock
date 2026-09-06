@@ -56,6 +56,7 @@ export function Releases() {
         ))}
       </div>
       <div className='release-archive-link'>
+        <a className='btn btn-primary' href='/singles'>Escuchar todos los singles <ExternalLink size={16} /></a>
         <a className='btn btn-ghost' href='/videos'>
           Ver todos los videos y podcast <ExternalLink size={16} />
         </a>
@@ -63,3 +64,4 @@ export function Releases() {
     </section>
   )
 }
+

@@ -7,6 +7,7 @@ import { Releases } from './sections/Releases'
 import { About } from './sections/About'
 import { Contact } from './sections/Contact'
 import { VideosPage } from './pages/VideosPage'
+import { SinglesPage } from './pages/SinglesPage'
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/$/, '') || '/'
@@ -17,6 +18,8 @@ export default function App() {
     const section = document.querySelector(window.location.hash)
     section?.scrollIntoView()
   }, [pathname])
+
+  if (pathname === '/singles') return <SinglesPage />
 
   if (pathname === '/videos') {
     return <VideosPage />
@@ -44,3 +47,4 @@ export default function App() {
     </>
   )
 }
+

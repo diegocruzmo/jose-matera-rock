@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 const links = [
   ["Fechas", "/#fechas"],
   ["Música", "/#musica"],
+  ["Singles", "/singles"],
   ["Videos & Podcast", "/videos"],
   ["Bio", "/#bio"],
   ["Contacto", "/#contacto"],
@@ -33,6 +34,7 @@ export function Header({ pathname = '/' }) {
             className={pathname === href ? 'nav-active' : ''}
             key={href}
             href={href}
+            aria-current={pathname === href ? 'page' : undefined}
             onClick={() => setOpen(false)}
           >
             {label}
@@ -42,3 +44,4 @@ export function Header({ pathname = '/' }) {
     </header>
   );
 }
+
