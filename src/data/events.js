@@ -34,5 +34,14 @@ export const events = [
     venue: 'Sesión acústica',
     flyer: '/images/events/flyer-04.png',
     ticketUrl: '#'
+  },
+  {
+    id: 5,
+    date: '26-27 SEP',
+    year: '2026',
+    city: 'Panamá',
+    venue: 'Sesión acústica',
+    flyer: '/images/events/flyer-05.jpeg',
+    ticketUrl: '#'
   }
 ]
