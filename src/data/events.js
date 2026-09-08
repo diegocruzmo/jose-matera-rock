@@ -10,20 +10,20 @@ export const events = [
   },
   {
     id: 2,
-    date: '12 SEP',
+    date: '19 SEP',
     year: '2026',
-    city: 'Barranquilla',
+    city: 'Puerto Colombia',
     venue: 'Sesión acústica',
-    flyer: '/images/events/flyer-02.jpeg',
+    flyer: '/images/events/flyer-02.png',
     ticketUrl: '#'
   },
   {
     id: 3,
-    date: '12 SEP',
+    date: '26-27 SEP',
     year: '2026',
-    city: 'Barranquilla',
+    city: 'Panamá',
     venue: 'Sesión acústica',
-    flyer: '/images/events/flyer-03.jpeg',
+    flyer: '/images/events/flyer-03.png',
     ticketUrl: '#'
   },
   {
@@ -32,16 +32,7 @@ export const events = [
     year: '2026',
     city: 'Panamá',
     venue: 'Sesión acústica',
-    flyer: '/images/events/flyer-04.png',
-    ticketUrl: '#'
-  },
-  {
-    id: 5,
-    date: '26-27 SEP',
-    year: '2026',
-    city: 'Panamá',
-    venue: 'Sesión acústica',
-    flyer: '/images/events/flyer-05.jpeg',
+    flyer: '/images/events/flyer-04.jpeg',
     ticketUrl: '#'
   }
 ]
