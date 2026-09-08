@@ -6,7 +6,7 @@ export const events = [
     city: 'Barranquilla',
     venue: 'Sesión acústica',
     flyer: '/images/events/flyer-01.jpeg',
-    ticketUrl: 'https://wa.me/3105879966'
+    ticketUrl: 'https://wa.me/573105879966'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const events = [
     city: 'Puerto Colombia',
     venue: 'Sesión acústica',
     flyer: '/images/events/flyer-02.png',
-    ticketUrl: 'https://wa.me/3045633534'
+    ticketUrl: 'https://wa.me/573045633534'
   },
   {
     id: 3,
