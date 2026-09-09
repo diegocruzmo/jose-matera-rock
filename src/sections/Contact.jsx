@@ -22,7 +22,7 @@ export function Contact() {
         </div>
         <div>
           <a
-            href='https://wa.me/573154247200'
+            href='https://wa.me/573053056575'
             target='_blank'
             rel='noopener noreferrer'
           >
