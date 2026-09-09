@@ -20,3 +20,8 @@ npm run dev
 - `public/images/hero/jose-matera.png`: imagen principal.
 
 # jose-matera-rock
+
+## Google Analytics
+
+GA4 está preparado y se activa en producción con VITE_GA_MEASUREMENT_ID.
+Consulta [la guía de configuración](docs/google-analytics.md) para crear la propiedad, publicar y verificar los informes.

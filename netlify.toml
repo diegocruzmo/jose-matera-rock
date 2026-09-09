@@ -1,0 +1,3 @@
+# Public GA4 measurement ID, available only to Netlify production builds.
+[context.production.environment]
+  VITE_GA_MEASUREMENT_ID = "G-KNEBYSPNZS"
