@@ -3,6 +3,7 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Hero } from './sections/Hero'
 import { Events } from './sections/Events'
+import { LatestNews } from './sections/LatestNews'
 import { Releases } from './sections/Releases'
 import { About } from './sections/About'
 import { Contact } from './sections/Contact'
@@ -39,6 +40,7 @@ export default function App() {
           </div>
         </div>
         <Events />
+        <LatestNews />
         <Releases />
         <About />
         <Contact />
