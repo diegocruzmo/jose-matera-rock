@@ -2,7 +2,7 @@ import { ExternalLink, Instagram, Youtube } from 'lucide-react'
 import { SectionTitle } from '../components/SectionTitle'
 
 const youtubeUrl = 'https://youtu.be/6wbsK4dw9Ks?si=r6rDDCT3wFLEOWVg'
-const instagramUrl = 'https://www.instagram.com/p/DdwdjrTB_on/'
+const instagramUrl = 'https://www.instagram.com/p/DeihXj7t7SQ/'
 
 export function LatestNews() {
   return (
@@ -26,7 +26,9 @@ export function LatestNews() {
             />
           </div>
           <div className='latest-news-meta'>
-            <span><Youtube size={16} /> YouTube</span>
+            <span>
+              <Youtube size={16} /> YouTube
+            </span>
             <a href={youtubeUrl} target='_blank' rel='noreferrer'>
               Ver en YouTube <ExternalLink size={14} />
             </a>
@@ -36,7 +38,7 @@ export function LatestNews() {
         <article className='latest-news-card latest-news-card--instagram'>
           <div className='latest-news-embed latest-news-embed--instagram'>
             <iframe
-              src='https://www.instagram.com/p/DdwdjrTB_on/embed/captioned/'
+              src='https://www.instagram.com/p/DeihXj7t7SQ/embed/captioned/'
               title='Última publicación de José Matera en Instagram'
               loading='lazy'
               allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'
@@ -44,7 +46,9 @@ export function LatestNews() {
             />
           </div>
           <div className='latest-news-meta'>
-            <span><Instagram size={16} /> Instagram</span>
+            <span>
+              <Instagram size={16} /> Instagram
+            </span>
             <a href={instagramUrl} target='_blank' rel='noreferrer'>
               Ver en Instagram <ExternalLink size={14} />
             </a>
