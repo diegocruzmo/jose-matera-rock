@@ -1,6 +1,15 @@
 export const events = [
   {
     id: 1,
+    date: '24 OCT',
+    year: '2026',
+    city: 'Monteria',
+    venue: 'Acústico',
+    flyer: '/images/events/flyer-01.png',
+    ticketUrl: '#'
+  },
+  {
+    id: 2,
     date: '31 OCT',
     year: '2026',
     city: 'Salgar',
